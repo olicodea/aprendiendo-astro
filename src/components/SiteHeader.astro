@@ -1,8 +1,17 @@
 ---
 const { title = "Aprendiendo Astro", description = "Descripción por defecto" } = Astro.props;
+const backgroundColor = "indigo";
+const color = "white";
 ---
 
-<header>
+<style define:vars={{ backgroundColor, color }}>
+  .container {
+    background-color: var(--backgroundColor);
+    color: var(--color);
+  }
+</style>
+
+<header class="container">
   <h1>{title}</h1>
   <p>{description}</p>
 </header>

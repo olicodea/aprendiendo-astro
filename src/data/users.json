@@ -1,0 +1,32 @@
+[
+    {
+      "username": "void_oli",
+      "role": "streamer",
+      "image": "/assets/void_oli.avif",
+      "color": "indigo"
+    },
+    {
+        "username": "quesocalientev0",
+        "role": "viewer",
+        "image": "/assets/quesocalientev0.avif",
+        "color": "red"
+    },
+    {
+        "username": "gatunoneptuno",
+        "role": "streamer",
+        "image": "/assets/gatunoneptuno.avif",
+        "color": "green"
+    },
+    {
+        "username": "fakucai19",
+        "role": "streamer",
+        "image": "/assets/fakucai19.avif",
+        "color": "blue"
+    },
+    {
+        "username": "cachopetruzzo",
+        "role": "viewer",
+        "image": "/assets/cachopetruzzo.avif",
+        "color": "yellow"
+    }
+  ]

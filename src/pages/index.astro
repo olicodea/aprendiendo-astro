@@ -1,47 +1,33 @@
 ---
+import BaseLayout from "@/layouts/BaseLayout.astro";
 import SiteHeader from "@/components/SiteHeader.astro";
 import SiteNav from "@/components/SiteNav.astro";
 import SiteFooter from "@/components/SiteFooter.astro";
-import UserCard from "@/components/UserCard.astro";
+import CustomRating from "@/components/CustomRating.astro";
+import ReactComponent from "@/components/ReactComponent.jsx";
 
-const title = "Página principal";
-const description = "Una larga y detallada descripción de mi página.";
-const headerData = {
-    title: "Aprendiendo Astro desde prop",
-    description: "Primer día con Astro.",
-};
+const layoutData = {
+    title: "Mi página principal",
+    description: "Descripción larga y detallada de la página principal.",
+}
+
+const classList = ['success', 'danger'];
+const isDanger = true;
 ---
+<BaseLayout {...layoutData}>
+  <SiteHeader />
+  <SiteNav class="nav-bar" />
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-        <meta name="description" content={description} />
-    </head>
-    <body>
-        <SiteHeader {...headerData} />
-        <SiteNav />
+  <h2>{layoutData.title}</h2>
 
-        <h2>{title}</h2>
-        <UserCard name="ManzDev" image="manzdev.png">
-            <slot name="header">
-                <h1>UserCard</h1>
-            </slot>
-            <slot name="content">
-                <h2>Information</h2>
-                <p>...</p>
-                <h2>Links</h2>
-                <p>...</p>
-            </slot>
-            <slot name="footer">Tarjeta de usuario personalizada.</slot>
-        </UserCard>
-        <main>
-            <p>Contenido de la página web en cuestión.</p>
-        </main>
+  <main class:list={classList}>
+    <p class:list={{ red: isDanger }} > Contenido de la página web en cuestión.</p>
+    <CustomRating value="3" />
 
-        <SiteFooter />
-    </body>
-</html>
+    <ReactComponent title="Hello World Astro!" />
+
+  </main>
+
+  <SiteFooter  />
+</BaseLayout>
+

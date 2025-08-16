@@ -1,6 +1,7 @@
 ---
+const { class: className } = Astro.props;
 ---
-<nav>
+<nav class={className}>
     <a href="/">Home</a>
     <a href="/services/">Services</a>
     <a href="/about/">About me</a>
