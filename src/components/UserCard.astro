@@ -1,0 +1,9 @@
+---
+const { name, image } = Astro.props;
+---
+<div class="user-card">
+    <header slot="header">aaa</header>
+    <img src={image} alt={name} />
+    <main slot="content"></main>
+    <footer slot="footer">No hay información en el footer.</footer>
+</div>
