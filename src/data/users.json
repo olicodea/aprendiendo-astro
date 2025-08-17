@@ -28,5 +28,17 @@
         "role": "viewer",
         "image": "/assets/cachopetruzzo.avif",
         "color": "yellow"
+    },
+    {
+        "username": "JessiOwe",
+        "role": "streamer",
+        "image": "/assets/jessiowe.avif",
+        "color": "pink"
+    },
+    {
+        "username": "jakahashi21",
+        "role": "viewer",
+        "image": "/assets/jakahashi21.avif",
+        "color": "pink"
     }
   ]

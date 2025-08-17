@@ -1,0 +1,14 @@
+[
+    {
+      "year": "2025",
+      "slug": "prueba",
+      "title": "Prueba de Astro",
+      "content": "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+    },
+    {
+        "year": "2024",
+        "slug": "test",
+        "title": "Test de Astro 2024",
+        "content": "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+    }
+  ]

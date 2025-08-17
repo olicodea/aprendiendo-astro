@@ -1,0 +1,21 @@
+---
+import posts from "../../../data/posts.json";
+
+export async function getStaticPaths() {
+  return posts.map(post => ({
+    params: {
+      year: post.year,
+      slug: post.slug
+    },
+    props: {
+      post
+    }
+  }));
+}
+
+const { post } = Astro.props;
+const { year, slug } = Astro.params;
+---
+<h1>{post.title}</h1>
+<p>{post.content}</p>
+<small>Publicado en: {year} - URL: /post/{year}/{slug}</small>
